@@ -1,0 +1,245 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран€ем отступы между €чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #606060;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}p{
+	#2c2c2c;
+}
+/* ------------------------- haeder --------------------------*/
+body{ 
+	color: #f9f9f9;
+}
+.block-main-center{
+	margin: 0 auto;
+	max-width: 1060px;
+	max-height: 1060x;
+	border-left: 2px solid #c8c8c8;
+	border-right: 2px solid #c8c8c8;
+}
+._center{
+	margin: 0 auto;
+	max-width: 960px;
+	font-size: 50px;
+	font-weight: 600;
+	padding: 40px 0 0 0;
+	padding-bottom: 40px;
+	color: black;
+	
+}
+ header{
+	 background: #555555; 
+	 overflow: hidden;
+	 max-width: 960px;
+     margin: 0 auto;
+ }
+	.center-block-main{
+		margin: 0 auto; 
+		max-width: 960px;		
+	}
+	.menu{
+	
+	}
+	.menu li{
+		float: left; 
+		font-weight: 600;
+	}
+	a{
+		color: #656363; 
+		text-decoration: none; 
+	}
+
+
+	.menu li a{
+		color: #fff; 
+		text-decoration: none; 
+		padding: 20px 35px;
+		display: block; 
+		border: 1px solid transparent;
+	}
+	.menu li a:hover{
+		text-decoration: underline;
+		background-color: #424242;
+		border-left: 1px solid #838383;
+		border-right: 1px solid #838383;
+	}
+._border{
+	margin: 0;
+	display: block;
+	font-size: 16px;
+	color: #838383;	
+	border-left: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	padding: 15px 0px 15px 35px; 
+}
+._border-top{
+	border-top: 1px solid #c8c8c8;
+}
+._border a{
+	text-decoration: none;
+}
+._border a:haver{
+	background-color: #f9f9f9;
+}
+.content{
+	border-right: 1px solid #e1e0e0; 
+	border-left: 1px solid #e1e0e0;
+}
+main{
+	float: left; 
+	width: 15em; 
+	margin-top: 70px;
+}
+.article-hover a{
+	color: #838383;
+}
+.article-hover a:hover{
+	color: #2c2c2c;
+	padding-left: 20px;
+	-webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	
+}
+.article-hover{
+	background: #2c2c2c;
+}
+.article-hover{
+	background: #f9f9f9;
+}
+aside{
+	float: right; 
+	max-width: 680px; 
+	margin-top: 70px; 
+	display: inline-block; 
+}
+aside p{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	color: #2c2c2c;
+}
+.block-right{
+	max-width: 680px;
+	border: 1px solid #c8c8c8;
+}
+footer{
+    max-width: 960px;
+    margin: 0 auto;
+	background: #c8c8c8; 
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+	._menu{
+	
+	}
+	._menu li{
+		float: left; 
+		font-weight: 600;
+	}
+	a{
+		color: #656363; 
+		text-decoration: none; 
+	}
+
+
+	._menu li a{
+		color: #2c2c2c; 
+		text-decoration: none; 
+		padding: 20px 35px;
+		display: block; 
+		border: 1px solid transparent;
+	}
+	._menu li:last-child]{
+		float: right;
+	}
+	._right a{
+		float: right
+	}
+	._menu li a:hover{
+		text-decoration: underline;
+	}
+	._right{
+		float: right;
+	}
